@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec; /* Light pink background */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #c2185b; /* Pinkish-red */
+        }
+
+        .match-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .match-info p:last-child {
+            margin-bottom: 0;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #c2185b; /* Pinkish-red */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ad1457; /* Darker pinkish-red */
+        }
+
+        .link {
+            color: #c2185b; /* Pinkish-red */
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Match Found!</h2>
+        <div class="match-info">
+            <p>Name: {{ matched_user.name }}</p>
+            <p>Instagram ID: {{ matched_user.instagram_id }}</p>
+            <p>Branch: {{ matched_user.branch }}</p>
+            <p>Semester: {{ matched_user.year }}</p>
+        </div>
+        
+    </div>
+</body>
+</html>
